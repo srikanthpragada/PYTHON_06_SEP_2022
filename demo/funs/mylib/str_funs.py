@@ -1,4 +1,9 @@
 def count_upper(st):
+    """
+    Returns number of uppercase letters in the given string
+    :param st: String to search
+    :return: Count of uppercase letters
+    """
     count = 0
     for c in st:
         if c.isupper():
@@ -22,3 +27,9 @@ def has_upper(st):
             return True
 
     return False
+
+
+# Testing
+if __name__ == '__main__':
+    print(count_digit('123abc'))
+    print(has_upper('123abc'))
