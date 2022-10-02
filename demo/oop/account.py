@@ -14,7 +14,7 @@ class Account:
         if amount >= 100:
             self.__balance -= amount
         else:
-            print("Invalid transaction amount")
+            raise ValueError("Invalid transaction amount")
 
     def getbalance(self):
         return self.__balance
@@ -22,8 +22,10 @@ class Account:
 
 a1 = Account(1, "Scott")
 a1.deposit(10000)
+a1.withdraw(1)
+
 print(a1.__dict__)
-#print(a1.__balance)
+# print(a1.__balance)
 print(a1.getbalance())
 
 a2 = Account(2, "Tom", 20000)
