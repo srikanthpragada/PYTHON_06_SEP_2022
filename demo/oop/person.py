@@ -10,6 +10,7 @@ class Person:
         return f"{self.name} - {self.age}"
 
     def __gt__(self, other):
+        print("__gt__")
         return self.age > other.age
 
 

@@ -16,7 +16,8 @@ class Account:
         else:
             raise ValueError("Invalid transaction amount")
 
-    def getbalance(self):
+    @property
+    def currentbalance(self):
         return self.__balance
 
 
@@ -26,7 +27,7 @@ a1.withdraw(1)
 
 print(a1.__dict__)
 # print(a1.__balance)
-print(a1.getbalance())
+print(a1.currentbalance)
 
 a2 = Account(2, "Tom", 20000)
 a2.deposit(5000)
