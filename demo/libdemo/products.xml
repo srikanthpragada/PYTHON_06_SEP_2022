@@ -1,0 +1,14 @@
+<products>
+    <product>
+        <name>iPhone 14 Pro</name>
+        <price>129000</price>
+    </product>
+    <product>
+        <name>Dell XPS 15 Inch</name>
+        <price>155000</price>
+    </product>
+    <product>
+        <name>Logitech Vertical Mouse</name>
+        <price>10000</price>
+    </product>
+</products>
