@@ -12,7 +12,7 @@ try:
     if cur.rowcount == 1:
         print("Updated Successfully!")
         con.commit()
-    else:
+    else: # id not found
         print("Sorry! Employee id not found!")
 except Exception as ex:
     print("Error : ", ex)
